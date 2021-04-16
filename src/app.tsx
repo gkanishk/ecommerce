@@ -1,5 +1,6 @@
 import { hot } from 'react-hot-loader/root';
-import React, { useState } from 'react';
+import React from 'react';
+import { Home } from './components/home';
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     return (
         <>
             <div>
-                Test App
+                <Home/>
             </div>
         </>
     );
