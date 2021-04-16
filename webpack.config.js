@@ -5,10 +5,17 @@ module.exports = {
     entry: path.join(__dirname, "src", "index.js"),
     output: { path: path.join(__dirname, "build"), filename: "index.bundle.js" },
     mode: process.env.NODE_ENV || "development",
-    resolve: { modules: [path.resolve(__dirname, "src"), "node_modules"] },
+    resolve: { 
+        modules: [path.resolve(__dirname, "src"), "node_modules"],
+        extensions: ['.js', '.jsx', '.react.js', '.ts', '.tsx'] 
+    },
     devServer: { contentBase: path.join(__dirname, "src") },
     module: {
         rules: [
+            { 
+                test: /\.tsx?$/, 
+                loader: 'awesome-typescript-loader' 
+            },
             { 
                 test: /\.(js|jsx)$/, 
                 exclude: /node_modules/, 
