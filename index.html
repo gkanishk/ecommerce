@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Ecommerce
+        </title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root">
+        </div>
+        <div class="container">
+            <div id="filters-container">
+                <h1>
+                    Filters
+                </h1>
+                <span>Search</span>
+                <input id="search-box" type="text" />
+                <span>Sort by:</span>
+                <select name="sortBy" id="sortByFilter">
+                    <option value="">
+                        Select Sort by
+                    </option>
+                    <option value="low">
+                        Low to high
+                    </option>
+                    <option value="high">
+                        High to low
+                    </option>
+                </select>
+                <span>Sizes</span>
+                <div id="sizes-filter">
+                    <label>
+                        S <input type="checkbox" name="sizes" value="s"/>
+                    </label>
+                    <label>
+                        M <input type="checkbox" name="sizes" value="m"/>
+                    </label>
+                    <label>
+                        L <input type="checkbox" name="sizes" value="l"/>
+                    </label>
+                    <label>
+                        XL <input type="checkbox" name="sizes" value="xl"/>
+                    </label>
+                </div>
+            </div>
+            <div id="product-container">
+
+            </div>
+        </div>
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
+</html>
